@@ -11,9 +11,9 @@
     <tr>
         <td><%= article.title %></td>
         <td><%= article.description %></td>
-        <td><%= link_to 'Editar', edit_article_path(article.id)%></td>
-        <td></td>
-        <td><%= link_to 'Ver Artigo', article_path(article.id)%></td>
+        <td><%= link_to 'Editar', edit_article_path(article.id)%> | </td>
+        <td><%= link_to 'Ver Artigo', article_path(article.id)%> | </td> 
+        <td><%= link_to 'Apagar Artigo', article_path(article.id), method: :delete, data: {confirm: 'Tem certeza?'}%></td>
     </tr>
     <% end %>
 </table>
