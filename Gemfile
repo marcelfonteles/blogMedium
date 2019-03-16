@@ -31,8 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 # gem awesome print for showing better data
 gem 'awesome_print'
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'popper_js', '~> 1.14.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
