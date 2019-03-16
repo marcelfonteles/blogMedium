@@ -3,13 +3,17 @@
     <tr>
       <th>Título</th>
       <th>Descrição</th>
+      <th></th>
       <th>Editar</th>
+      <th></th>
     </tr>
     <% @articles.all.each do |article| %>
     <tr>
         <td><%= article.title %></td>
         <td><%= article.description %></td>
         <td><%= link_to 'Editar', edit_article_path(article.id)%></td>
+        <td></td>
+        <td><%= link_to 'Ver Artigo', article_path(article.id)%></td>
     </tr>
     <% end %>
 </table>
